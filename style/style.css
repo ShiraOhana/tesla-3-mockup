@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #171a20;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +59,7 @@ li:hover {
   opacity: 0.7;
   cursor: pointer;
 }
+/* First page */
 main h1 {
   color: #fff;
   text-align: center;
@@ -146,14 +151,14 @@ button:hover {
 .page-two-section .subtitles {
   font-weight: 600;
 }
-.second-page-button-section {
+.button-section {
   display: flex;
   align-items: center;
   position: relative;
   top: 280px;
 }
 
-.second-page-button-section .order-now-button {
+.button-section .order-now-button {
   border-radius: 25px;
   padding: 10px 60px;
   font-weight: 600;
@@ -164,7 +169,7 @@ button:hover {
   order: 3;
   align-self: flex-end;
 }
-.second-page-button-section .learn-more-button {
+.button-section .learn-more-button {
   border-radius: 50%;
   padding: 5px 10px;
   border: 3.5px solid black;
@@ -174,15 +179,79 @@ button:hover {
   background-color: transparent;
   color: grey;
 }
-.second-page-button-section .learn-more-button:hover,
-.second-page-button-section .order-now-button:hover {
+.button-section .learn-more-button:hover,
+.button-section .order-now-button:hover {
   color: #ffff;
   background-color: #171a20;
   transition: all 200ms ease-in-out;
 }
-.second-page-button-section p {
+.button-section p {
   order: 2;
   padding: 0px 10px;
   font-weight: 400;
   font-size: 14px;
+}
+/* Third page */
+
+/* Page three badges */
+.badges-page-3 {
+  display: flex;
+  justify-content: center;
+  color: #e2e3e3;
+  padding-top: 380px;
+}
+
+.badge-3 {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  padding: 15px 25px;
+  margin: 40px;
+  font-weight: 700;
+  padding-bottom: 1px;
+  line-height: 13px;
+  margin-top: 80px;
+}
+.bagde-description-3 {
+  font-size: 12px;
+}
+.badge-3 p {
+  font-size: 28px;
+}
+.badge-3 span {
+  padding-bottom: 15px;
+}
+/* Page three text and buttons */
+.third-left-side p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 95px;
+  left: 130px;
+  align-items: flex-end;
+}
+.third-page-button-section {
+  position: relative;
+  top: 20px;
+  margin: 1px;
+}
+.third-right-side h6 {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--primary-color);
+  padding-top: 15px;
+}
+.third-right-side h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--primary-color);
+}
+
+.third-right-side,
+.third-left-side {
+  width: 80%;
+  margin: 0 auto;
 }
